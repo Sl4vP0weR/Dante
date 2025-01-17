@@ -1,0 +1,10 @@
+services:
+  dante:
+    image: sl4vp0wer/dante:latest
+    container_name: dante
+    ports:
+      - "1080:1080"
+    volumes:
+      - ./dante.conf:/etc/sockd.conf:ro
+    environment:
+      - ROOT_PASSWORD=YourProxyPassword

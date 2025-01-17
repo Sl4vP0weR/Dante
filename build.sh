@@ -1,0 +1,1 @@
+docker build -t sl4vp0wer/dante:latest .
